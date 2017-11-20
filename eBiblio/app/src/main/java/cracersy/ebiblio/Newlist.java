@@ -24,9 +24,9 @@ public class Newlist extends AppCompatActivity {
         // ustawiamy animatora, który odpowiada za animację dodania/usunięcia elementów listy
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 //Zakomentowane do czasu implementacji api
-      //  ArrayList<Newlist> new_array;
+       //ArrayList<Newlist> new_array;
 
-       // recyclerView.setAdapter(new MyAdapter(new_array, recyclerView, this));
+       //recyclerView.setAdapter(new MyAdapter(new_array, recyclerView, this));
 
 
     }
