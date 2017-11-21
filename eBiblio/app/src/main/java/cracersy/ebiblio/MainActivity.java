@@ -105,10 +105,6 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         switch (id) {
-            case R.id.action_logout:
-                boolean success = false;
-                startActivity(new Intent(this, LoginActivity.class));
-                return true;
             case R.id.action_settings:
                 return true;
             case R.id.action_search:
