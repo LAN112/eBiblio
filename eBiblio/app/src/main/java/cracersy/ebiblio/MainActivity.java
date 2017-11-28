@@ -9,12 +9,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import java.time.Instant;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -108,8 +110,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_logout:
                 boolean success = false;
                 startActivity(new Intent(this, LoginActivity.class));
-                return true;
-            case R.id.action_settings:
                 return true;
             case R.id.action_search:
                 handleMenuSearch();
