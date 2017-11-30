@@ -51,6 +51,7 @@ public class LoginActivity extends AppCompatActivity {
 
                             if (success) {
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                intent.putExtra("username", username);
                                 LoginActivity.this.startActivity(intent);
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);

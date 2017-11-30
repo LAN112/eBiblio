@@ -22,9 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".zapamietane"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".zapamietane" />
+        <activity android:name=".Biblioteka" />
+        <activity android:name=".MojRegal" />
+        <activity android:name=".BookDetails" />
+        <activity android:name=".OrderDetails"></activity>
     </application>
 
 </manifest>

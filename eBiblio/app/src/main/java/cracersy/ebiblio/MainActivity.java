@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.TextView;
@@ -124,12 +125,14 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+    Context context;
+    public User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        context=this;
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
 
@@ -143,6 +146,43 @@ public class MainActivity extends AppCompatActivity {
 
         MyAdapter myAdapter=new MyAdapter(this,R.layout.grid_view_items,optionList);
         simpleList.setAdapter(myAdapter);
+
+        String uname=getIntent().getExtras().getString("username");
+        user=new User(uname, context);
+
+
+        simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+
+                    final Intent intent;
+                    switch(position)
+                    {
+                        case 0:
+                            intent =  new Intent(v.getContext(), MojRegal.class);
+                            intent.putExtra("id_user", user.id_user);
+                            break;
+
+                        case 1:
+                            intent =  new Intent(v.getContext(), Biblioteka.class);
+                            intent.putExtra("id_user", user.id_user);
+                            break;
+
+                        default:
+                            intent =  new Intent(v.getContext(), LoginActivity.class);
+                            intent.putExtra("id_user", user.id_user);
+                            break;
+                    }
+                    startActivity(intent);
+
+
+                }
+            });
+
+
+
+
+
     }
 
 
