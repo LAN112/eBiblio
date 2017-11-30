@@ -17,7 +17,6 @@ import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import java.time.Instant;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -167,7 +166,18 @@ public class MainActivity extends AppCompatActivity {
                             intent =  new Intent(v.getContext(), Biblioteka.class);
                             intent.putExtra("id_user", user.id_user);
                             break;
-
+                        case 3:
+                            intent =  new Intent(v.getContext(), zapamietane.class);
+                            intent.putExtra("id_user", user.id_user);
+                            break;
+                        case 4:
+                            intent =  new Intent(v.getContext(), Konto.class);
+                            intent.putExtra("id_user", user.id_user);
+                            break;
+                        case 5:
+                            intent =  new Intent(v.getContext(), aktualnosci.class);
+                            intent.putExtra("id_user", user.id_user);
+                            break;
                         default:
                             intent =  new Intent(v.getContext(), LoginActivity.class);
                             intent.putExtra("id_user", user.id_user);

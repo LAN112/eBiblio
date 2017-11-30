@@ -28,7 +28,8 @@
         <activity android:name=".Biblioteka" />
         <activity android:name=".MojRegal" />
         <activity android:name=".BookDetails" />
-        <activity android:name=".OrderDetails"></activity>
+        <activity android:name=".OrderDetails" />
+        <activity android:name=".Konto"></activity>
     </application>
 
 </manifest>

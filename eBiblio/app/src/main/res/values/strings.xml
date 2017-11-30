@@ -14,6 +14,8 @@
     <string name="action_sign_in_short">Zaloguj się</string>
     <string name="zapamietane">ZAPAMIETANE</string>
     <string name="zapami_tane">Zapamiętane</string>
+    <string name="aktualnosci">Aktualnosci</string>
+    <string name="todo">TODO</string>
     <item name="visible" type="id" />
     <item name="masked" type="id" />
 </resources>
