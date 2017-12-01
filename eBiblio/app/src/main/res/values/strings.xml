@@ -15,7 +15,12 @@
     <string name="zapamietane">ZAPAMIETANE</string>
     <string name="zapami_tane">Zapamiętane</string>
     <string name="aktualnosci">Aktualnosci</string>
+    <string name="Zapamietaj">Zapamietaj</string>
+    <string name="Zarezerwuj">Zarezerwuj</string>
+    <string name="Opis">Czytaj opis</string>
     <string name="todo">TODO</string>
+    <string name="wiadomosc">Proszę czekać.</string>
     <item name="visible" type="id" />
     <item name="masked" type="id" />
+
 </resources>

@@ -29,7 +29,7 @@ public class MojRegal extends AppCompatActivity {
     private CountDownTimer mCountDownTimer;
     private RecyclerView recyclerView;
     private Context context;
-
+    private Dialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class MojRegal extends AppCompatActivity {
         setContentView(R.layout.activity_biblioteka);
 
         context=this;
-
+        dialog=new Dialog(context);
         recyclerView = (RecyclerView) findViewById(R.id.articles);
         // w celach optymalizacji
         recyclerView.setHasFixedSize(true);
@@ -51,13 +51,15 @@ public class MojRegal extends AppCompatActivity {
         mCountDownTimer = new CountDownTimer(10000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
+                dialog.resume();
                 if (wszystkie.end_response.size()!= 0){
-                    millisUntilFinished=0;
+                    mCountDownTimer.cancel();
+                    recyclerView.setAdapter(new OrdersListAdapter(wszystkie.end_response, recyclerView, context));
+                    dialog.stop();
                 }
             }
             @Override
             public void onFinish() {
-                recyclerView.setAdapter(new OrdersListAdapter(wszystkie.end_response, recyclerView, context));
             }
         };
         mCountDownTimer.start();
