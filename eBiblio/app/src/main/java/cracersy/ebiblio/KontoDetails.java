@@ -60,11 +60,11 @@ public class KontoDetails extends AppCompatActivity {
                 dialog.resume();
                 if (konto.name != null) {
                     mmCountDownTimer.cancel();
-                    imie.setText("IMIE:" + konto.name);
-                    nazwisko.setText("NAZWISKO: " + konto.nazwisko);
-                    saldo.setText("SALDO: " + konto.saldo);
-                    all_olders.setText("ALL ORDERS: " + konto.all_olders);
-                    cur_orders.setText("CUR ORDERS" + konto.cur_orders);
+                    imie.setText("Imie:" + konto.name);
+                    nazwisko.setText("Nazwisko: " + konto.nazwisko);
+                    saldo.setText("Saldo: " + konto.saldo);
+                    all_olders.setText("Ilość wypożyczonych książek: " + konto.all_olders);
+                    cur_orders.setText("Ilość obecnie wypożyczonych:" + konto.cur_orders);
                     dialog.stop();
                 }
             }
