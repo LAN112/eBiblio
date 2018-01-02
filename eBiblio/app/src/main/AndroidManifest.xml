@@ -29,7 +29,7 @@
         <activity android:name=".MojRegal" />
         <activity android:name=".BookDetails" />
         <activity android:name=".OrderDetails" />
-        <activity android:name=".Konto" />
+        <activity android:name=".KontoDetails" />
         <activity android:name=".book_description"></activity>
     </application>
 

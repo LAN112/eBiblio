@@ -41,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                 final String username = etUsername.getText().toString();
                 final String password = etPassword.getText().toString();
 
+
                 // Response received from the server
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -51,7 +52,9 @@ public class LoginActivity extends AppCompatActivity {
 
                             if (success) {
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+
                                 intent.putExtra("username", username);
+
                                 LoginActivity.this.startActivity(intent);
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);

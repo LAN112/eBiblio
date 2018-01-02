@@ -3,6 +3,7 @@ package cracersy.ebiblio;
 import android.content.Context;
 import android.content.Intent;
 import android.os.SystemClock;
+import android.util.Log;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -56,6 +57,7 @@ public class Book {
 
         BookRequest bookRequest = new BookRequest(nazwa_informacji, wartosc_informacji, responseListener2);
         RequestQueue queue = Volley.newRequestQueue(context);
+
         queue.add(bookRequest);
 
     }

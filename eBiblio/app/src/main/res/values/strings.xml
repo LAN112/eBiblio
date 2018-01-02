@@ -1,25 +1,19 @@
 <resources>
     <string name="app_name">eBiblio</string>
-    <string name="action_settings">Wyloguj</string>
     <string name="search">Wyszukaj</string>
-    <string name="title_activity_login">Zaloguj się</string>
     <string name="Nowości">Nowości</string>
     <string name="eKsiaznica">eKsiążnica</string>
     <string name="opis">APLIKACJA PRZEZNACZONA DLA CZYTELNIKÓW KSIĄŻNICY POMORSKIEJ W SZCZECINIE</string>
-    <string name="phaslo">Przypomnij hasło</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Hasło (opcjonalne)</string>
     <string name="action_sign_in">Zaloguj się lub zarejestruj</string>
     <string name="action_sign_in_short">Zaloguj się</string>
-    <string name="zapamietane">ZAPAMIETANE</string>
     <string name="zapami_tane">Zapamiętane</string>
-    <string name="aktualnosci">Aktualnosci</string>
     <string name="Zapamietaj">Zapamietaj</string>
     <string name="Zarezerwuj">Zarezerwuj</string>
     <string name="Opis">Czytaj opis</string>
     <string name="todo">TODO</string>
-    <string name="wiadomosc">Proszę czekać.</string>
     <item name="visible" type="id" />
     <item name="masked" type="id" />
 

@@ -21,7 +21,6 @@
     </include>
 
     <ImageButton
-        android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="?attr/homeAsUpIndicator" />
@@ -37,7 +36,6 @@
     </SearchView>
 
     <LinearLayout
-        android:id="@+id/lista2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -45,7 +43,6 @@
         android:orientation="vertical">
 
         <ListView
-            android:id="@+id/lista"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scrollbars="horizontal" />

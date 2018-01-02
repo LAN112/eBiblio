@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
                             intent.putExtra("id_user", user.id_user);
                             break;
                         case 4:
-                            intent =  new Intent(v.getContext(), Konto.class);
+                            intent =  new Intent(v.getContext(), KontoDetails.class);
                             intent.putExtra("id_user", user.id_user);
                             break;
                         case 5:
