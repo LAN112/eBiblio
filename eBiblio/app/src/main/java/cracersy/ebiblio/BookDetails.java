@@ -87,8 +87,30 @@ public class BookDetails extends AppCompatActivity {
         Zapamietaj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Intent = new Intent(view.getContext(), zapamietane.class);
-                view.getContext().startActivity(Intent);}
+                Zapamietaj.setText("Zapamietano!");
+
+                Response.Listener<String> responseListener2 = new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONArray responseArray = new JSONArray(response);
+                            for (int i = 0; i < responseArray.length(); i++) {
+                                end_response = (JSONObject) responseArray.get(i);
+                                //Log.d(TAG, end_response.optString("tytul"));
+                            }
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+
+
+                SaveRequest saveRequest = new SaveRequest(getIntent().getExtras().getString("id_user"), ksiazka.id_book, responseListener2);
+                RequestQueue queue = Volley.newRequestQueue(context);
+                queue.add(saveRequest);
+            }
         });
 
 

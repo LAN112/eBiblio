@@ -166,6 +166,10 @@ public class MainActivity extends AppCompatActivity {
                             intent =  new Intent(v.getContext(), Biblioteka.class);
                             intent.putExtra("id_user", user.id_user);
                             break;
+                        case 2:
+                            intent =  new Intent(v.getContext(), NewBooks.class);
+                            intent.putExtra("id_user", user.id_user);
+                            break;
                         case 3:
                             intent =  new Intent(v.getContext(), zapamietane.class);
                             intent.putExtra("id_user", user.id_user);

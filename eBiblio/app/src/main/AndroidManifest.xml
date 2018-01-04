@@ -27,7 +27,10 @@
         <activity android:name=".zapamietane" />
         <activity android:name=".Biblioteka" />
         <activity android:name=".MojRegal" />
+        <activity android:name=".Newlist" />
+        <activity android:name=".NewBooks" />
         <activity android:name=".BookDetails" />
+        <activity android:name=".NewsDetails" />
         <activity android:name=".OrderDetails" />
         <activity android:name=".KontoDetails" />
         <activity android:name=".book_description"></activity>
