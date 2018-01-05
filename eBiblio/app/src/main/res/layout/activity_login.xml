@@ -21,9 +21,10 @@
     <TextView
         android:id="@+id/opis"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="139dp"
         android:text="@string/opis"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
     <ProgressBar
@@ -81,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
+                android:text="@string/action_sign_in_short"
                 android:textStyle="bold" />
 
             <TextView

@@ -6,34 +6,21 @@
     android:layout_height="match_parent">
 
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></include>
+
     <TextView
         android:id="@+id/Zapamietane"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/toolbar"
         android:layout_centerHorizontal="true"
         android:text="@string/zapami_tane"
         android:textSize="40sp" />
-
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar">
-    </include>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="?attr/homeAsUpIndicator" />
-
-    <SearchView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="350dp"
-        android:gravity="top|right"
-        android:orientation="vertical"
-        android:visibility="visible">
-
-    </SearchView>
 
     <LinearLayout
         android:layout_width="wrap_content"

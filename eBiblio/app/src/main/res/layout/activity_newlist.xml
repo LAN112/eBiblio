@@ -4,20 +4,20 @@
     android:layout_height="match_parent">
 
 
-    <TextView
-        android:id="@+id/Zapamietane"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
-        android:layout_centerHorizontal="true"
-        android:textSize="40sp"
-        android:text="@string/Nowości" />
-
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar">
     </include>
 
+
+    <TextView
+        android:id="@+id/Zapamietane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Nowości"
+        android:textSize="40sp" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_below="@id/Zapamietane"

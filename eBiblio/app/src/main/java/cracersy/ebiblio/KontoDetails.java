@@ -62,7 +62,7 @@ public class KontoDetails extends AppCompatActivity {
                     mmCountDownTimer.cancel();
                     imie.setText("Imie:" + konto.name);
                     nazwisko.setText("Nazwisko: " + konto.nazwisko);
-                    saldo.setText("Saldo: " + konto.saldo);
+                    saldo.setText("Saldo: " + konto.saldo + "zł");
                     all_olders.setText("Ilość wypożyczonych książek: " + konto.all_olders);
                     cur_orders.setText("Ilość obecnie wypożyczonych:" + konto.cur_orders);
                     dialog.stop();
